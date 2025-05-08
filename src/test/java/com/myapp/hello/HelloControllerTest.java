@@ -8,7 +8,7 @@ class HelloControllerTest
     @Test
     void testHello() {
         HelloController controller = new HelloController();
-        String response = controller.sendHello();
+        String response = controller.hello();
         assertThat(response).isEqualTo("Hello, Jenkins!");
     }
 }
