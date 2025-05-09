@@ -14,7 +14,7 @@ public class HelloControllerIntegrationTest {
     private TestRestTemplate restTemplate;
     @Test
     public void testHelloEndpoint() {
-        String response = this.restTemplate.getForObject("http://localhost:" + port + "/hello", String.class);
-        assertThat(response).isEqualTo("Hello, Jenkins!");
+        String response = this.restTemplate.getForObject("http://localhost:" + port + "/", String.class);
+        assertThat(response).isEqualTo("<h1>hello from Spring Maven</h1>");
     }
 }
