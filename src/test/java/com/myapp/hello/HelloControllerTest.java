@@ -9,6 +9,6 @@ class HelloControllerTest
     void testHello() {
         HelloController controller = new HelloController();
         String response = controller.hello();
-        assertThat(response).isEqualTo("Hello, Jenkins!");
+        assertThat(response).isEqualTo("<h1>hello from Spring Maven</h1>");
     }
 }

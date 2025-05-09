@@ -1,12 +1,15 @@
 package com.myapp.hello;
 
+import java.util.*;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 @RestController
 public class HelloController {
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String hello() 
-{
-        return "Hello, Jenkins!";
+    {
+        return "<h1>hello from Spring Maven</h1>";
     }
 }
